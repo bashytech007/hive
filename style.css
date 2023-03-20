@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size:62.5%;
+}
+body {
+  font-family:'Montserrat'
+}
+.header {
+  /* height: 80px; */
+  position: sticky;
+  top: -16px;
+  width:100%;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  /* PSEUDO ELEMENTS to create drop-shadow */
+  /* SHADOW */
+  /* COVER */
+}
+.header::before,
+.header::after {
+  content: "";
+  display: block;
+  height: 16px;
+  /* make pseudo elements sticky as well */
+  position: sticky;
+}
+.header::before {
+  top: 48px;
+  /* shadow is at bottom of element, so at 48 + 16 = 64px */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .nav-container {
+  /* height: 64px; */
+  height: 98.47222137451172px;
+  width:100%;
+  /* width: 1706px; */
+  position: sticky;
+  top: 0px;
+  /* compensate for shadow with negative margin */
+  margin-top: -16px;
+  /* content should fall over shadow and cover */
+  z-index: 3;
+}
+/*wsui-shadow-on-scroll End*/
+.test-wsui-shadow-on-scroll {
+  border: 1px solid red;
+}
+.nav-container {
+  /* box-shadow: 0px 4.738888740539551px 35.541664123535156px 0px #2b7cc7; */
+  background: #2b7cc7;
+
+  display: flex;
+  align-items: center;
+  /* gap: 206px; */
+  justify-content: space-between;
+}
+.nav-logo {
+  height: 57px;
+  width: 127px;
+}
+/* .nav-search span {
+  position: absolute;
+  /* bottom:0; */
+/* left:1;
+} */
+*/ .nav-search {
+  width: 100%;
+}
+.logo {
+}
+.nav-logo {
+    /* height: 57px; */
+width: 127px;
+
+
+}
+.logo{
+    width:100%:
+}
+.nav-search {
+display:flex;
+align-items:center;
+justify-content:space-between;
+  width: 475px;
+  height: 53px;
+  background: #faf9f9;
+  padding: 10px;
+  border-radius:12px;
+  text-align: center;
+}
+.search-field {
+  border: none;
+  /* height:40%; */
+}
+.search-field:hover,
+.search-field:focus {
+  outline: none;
+}
+.fa-microphone,.fa-search{
+    color: #2B7CC7;
+
+    
+}
+
+.nav-profile {
+/* height: 70px; */
+/* width: 257px; */
+display:flex;
+align-items:center;
+justify-content:space-around;
+gap:15px;
+margin-right:20px;
+  /* width: 70px; */
+  /* background: red; */
+
+}
+
+.profile-logo {
+  border-radius: 50%;
+  width: 100%;
+}
+.bell{
+    /* display:inline-block; */
+    background:green;
+    /* height: 10px; */
+/* width: 10px; */
+
+/* background: #F20F1D; */
+
+}
+
+.profile-name{
+     font-family: Montserrat;
+     color:#FAF9F9;
+
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+//sidebar 
+
+.wrapper{
+height: 1349px;
+width: 333px;
+}
+
+.sidebar{
+height: 1349px;
+width: 333px;
+background: #2B7CC7;
+margin-top:-100px;
+/* position:fixed; */
+}
+
+ul{
+    text-decoration:none;
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    
+}
+.sidemenu {
+    margin-top:84px;
+    padding-top:20px;
+    /* margin:0 auto; */
+}
+li{
+    /* background:red; */
+}
+.home{
+    display:flex;
+    
+    /* align-items:center; */
+    gap:16px;
+    margin-top:24px;
+    /* flex-direction:row-reverse; */
+    /* justify-content:space-around; */
+}
+li .forum-links{
+    display:flex;
+    
+    align-items:center;
+    gap:176px;
+    margin-top:24px;
+    /* flex-direction:row-reverse; */
+    /* justify-content:space-around; */
+}
+
+a{
+  text-decoration:none;
+  color:#FAF9F9;
+
+}
+.home-icon{
+    width:24px;
+    height:24px;
+}
+
+li,a {
+    list-style:none;
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+
+text-align: left;
+
+}
+.forums-title{
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 300;
+line-height: 20px;
+color:#fff;
+text-align: left;
+}
+
+
